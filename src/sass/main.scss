@@ -44,7 +44,11 @@ hr {
 
 .blk3, .blk2, .blk1 {
 	display: none;
-	z-index: 100;
+	z-index: 500;
+
+	        @media (max-width: 991px) {
+            transform: translateY(-30px);
+         }
 }
 
 .hider1, .hider2, .hider3 {
@@ -85,26 +89,42 @@ hr {
 	.numbers {
 		font-size: 30px;
 		width: 255px;
+		@media (max-width: 1530px) {
+            margin: 0 0;
+         }
 		@media (max-width: 575px) {
             font-size: 23px;
+            margin-bottom: 20px; 
          }
 	}
 
+	.display-4 {
+		@media (max-width: 767px) {
+            font-size: 37px;
+        }
+    }
+
 	.mails {
 		border-width: 3px;
-			@media (max-width: 1530px) {
-            transform: translateY(-20px); 
-    }
-           		@media (max-width: 1199px) {
-            transform: translateY(0px);
-                 margin-right: 0;
+
+           		@media (max-width: 1199px) and (min-width: 992px) {
+            transform: translateX(-350px);
+            margin-right: 0;
+         }
+         		@media (max-width: 991px) and (min-width: 767px) {
+            transform: translateX(-120px);
+            margin-right: 0;
+         }
+
+          		@media (max-width: 767px) and (min-width: 576px) {
+                transform: translateX(30px);
          }
 	}
 
 			@media (max-width: 1199px) {
             height: 1100px;
-
          }
+         
          @media (max-width: 575px) {
             height: 650px;
          }
@@ -137,6 +157,9 @@ hr {
 	 	@include box-size(290px, 60px);
 	 	border: 3px solid;
 	 }
+	 @media (max-width: 991px) {
+            transform: scale(0.8);
+         }
 }
 
 article {

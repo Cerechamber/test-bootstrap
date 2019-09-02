@@ -20,4 +20,10 @@
 		transform: scale(1.05);
 		z-index: 100;
 	}
+
+	 		@media (max-width: 991px) {
+            height: 400px;
+         }
 }
+
+
