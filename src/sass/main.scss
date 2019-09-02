@@ -1,0 +1,181 @@
+body {
+	font-family: Myriad Pro;
+}
+
+.header {
+	@media (max-width: 767px) {
+		.display-4 {
+			font-size: 2.3rem;
+		}
+    }
+    @media (max-width: 575px) {
+		.display-4 {
+			font-size: 1.7rem;
+			margin: 30px 0;
+		}
+    }
+
+
+	h3 {
+		font-family: DIN Pro;
+	}
+}
+
+.nav {
+	font-family: DIN Pro;
+}
+
+.block1 {
+	@include nav_blocks(url("../../images/mountains.jpg"));
+}
+
+.block2 {
+	@include nav_blocks(url("../../images/boys.jpg"));
+}
+
+.block3 {
+	@include nav_blocks(url("../../images/guys.jpg"));
+}
+
+hr {
+	@include box-size(90px, 3px);
+	background: white;
+}
+
+.blk3, .blk2, .blk1 {
+	display: none;
+	z-index: 100;
+}
+
+.hider1, .hider2, .hider3 {
+  display: none;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main {
+	button {
+		font-family: DIN Pro;
+		font-size: 18px;
+		border-width: 3px;
+		@media (max-width: 575px) {
+    	width: 250px;
+		
+    }
+	}
+}
+
+.popup_p {
+	font-family: Myriad Pro;
+}
+
+.footer {
+	height: 600px;
+	h3 {
+		font-family: DIN Pro;
+		font-weight: 500;
+	}
+	p {
+		font-weight: 18px;
+	}
+	.numbers {
+		font-size: 30px;
+		width: 255px;
+		@media (max-width: 575px) {
+            font-size: 23px;
+         }
+	}
+
+	.mails {
+		border-width: 3px;
+			@media (max-width: 1530px) {
+            transform: translateY(-20px); 
+    }
+           		@media (max-width: 1199px) {
+            transform: translateY(0px);
+                 margin-right: 0;
+         }
+	}
+
+			@media (max-width: 1199px) {
+            height: 1100px;
+
+         }
+         @media (max-width: 575px) {
+            height: 650px;
+         }
+
+}
+
+.block {
+	@include box-size(545px, 460px);
+	border-width: 7px;
+	border: 3px #243448 solid;
+
+	input {
+		@include box-size(470px, 53px);
+	}
+
+	textarea {
+		@include box-size(470px, 110px);
+	}
+
+	.stretched-link {
+		@include box-size(470px, null);
+		color: #0058a7;
+		&:hover {
+			color: white;
+		}
+	}
+	 input[type="submit"] {
+	 	font-family: DIN Pro;
+	 	font-size: 18px;
+	 	@include box-size(290px, 60px);
+	 	border: 3px solid;
+	 }
+}
+
+article {
+	font-size: 18px;
+	p {
+		@media (max-width: 767px) {
+			font-size: 16px;
+    }
+    @media (max-width: 575px) {
+    	font-size: 14px;
+    	margin-bottom: 30px;
+		
+    }
+}
+}
+
+.s {
+	@media (max-width: 575px) {
+    	font-size: 14px;
+		
+    }
+}
+
+.address {
+	@media (max-width: 1530px) {
+     flex-wrap: wrap;
+     height: 250px;
+    }
+
+    @media (max-width: 1199px) {
+     flex-wrap: nowrap;
+    }
+    @media (max-width: 575px) {
+            flex-wrap: wrap;
+         }
+}
+
+#dis {
+	@media (max-width: 575px) {
+            display: none;
+         }
+}

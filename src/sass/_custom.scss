@@ -1,0 +1,67 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1650px
+);
+
+$display4-size: 2.9rem;
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4.4),
+    7: ($spacer * 8),
+    8: ($spacer * 7),
+    9: ($spacer * 5),
+    10: ($spacer * 2.5),
+    11: ($spacer * 2)
+  ),
+  $spacers
+);
+
+
+$sizes: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    65: 65%,
+    38: 38%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+
+
+$darkness: #000;
+$cherry: #00264c;
+$darkblue: #0d1b2b;
+$lightblue: #0058a7;
+$form: #243448;
+$form-text: #e6e7e8;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+   
+    "darkness":   $darkness,
+    "darkblue": $darkblue,
+    "cherry": $cherry,
+    "lightblue": $lightblue,
+    "form": $form,
+    "form-text": $form-text
+  ),
+  $theme-colors
+);

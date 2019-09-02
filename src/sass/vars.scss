@@ -1,0 +1,23 @@
+
+
+@mixin box-size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin nav_blocks($url) {
+	background: $url;
+	background-size: cover;
+	height: 575px;
+	cursor: pointer;
+	position: relative;
+	transition: transform 300ms linear;
+	div {
+		font-size: 19px;
+		line-height: 25px;
+	}
+	&:hover {
+		transform: scale(1.05);
+		z-index: 100;
+	}
+}
